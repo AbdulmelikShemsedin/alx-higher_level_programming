@@ -5,9 +5,9 @@ if __name__ == "__main__":
         arg = "argument:"
     elif len(argv) == 1:
         print("0 arguments.")
-        exit(0)
     else:
         arg = "arguments:"
-    print("{} {}".format(len(argv) - 1, arg,))
-    for i in range(1, len(argv)):
-        print("{}: {}".format(i, argv[i]))
+    if len(argv) > 1:
+        print("{} {}".format(len(argv) - 1, arg,))
+        for i in range(1, len(argv)):
+            print("{}: {}".format(i, argv[i]))
