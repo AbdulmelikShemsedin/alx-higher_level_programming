@@ -1,3 +1,4 @@
+#include "lists.h"
 #include <object.h>
 #include <listobject.h>
 #include <Python.h>
