@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Define a square class"""
 class Square:
-    """ rep.. of a square class"""
+    """ rep... of a square class"""
 
     def __init__(self, size=0):
         """ instantation with size for our obect
@@ -17,4 +17,4 @@ class Square:
 
     def area(self):
         """ method returns the current square area"""
-        return self.__size ** 2
+        return (self.__size ** 2)

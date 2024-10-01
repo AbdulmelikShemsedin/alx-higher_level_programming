@@ -2,5 +2,5 @@
 """ Define a square class"""
 
 class Square:
-    """ rep.. of a square class"""
+    """ rep... of a square class"""
     pass
