@@ -7,7 +7,9 @@ class Square:
         initialization
         """
         if size != int(size):
-            raise TypeError("size must be an integer", end="")
+            print("size must be an integer", end="")
+            raise TypeError
         if size < 0:
-            raise ValueError("size must be >= 0", end="")
+            print("size must be >= 0", end="")
+            raise ValueError
         self.__size = size
