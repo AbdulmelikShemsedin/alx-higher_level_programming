@@ -29,3 +29,11 @@ class Square:
     def area(self):
         """ method that  returns the current square area"""
         return (self.__size * self.__size)
+
+    def my_print(self):
+        """ print rep of square with # char... """
+        if self.__size == 0:
+            print()
+        for item in range(self.__size):
+            [print("#", end="") for j in range(self.__size)]
+            print()
