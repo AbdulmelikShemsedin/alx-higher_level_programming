@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+""" Define a square class"""
 class Square:
+    """ rep.. of a square class"""
     def __init__(self, size=0):
+        """ instantation with size for our obect
+        initialization
+        """
         self.__size = size
         if size != int(size):
             print("size must be an integer", end="")
