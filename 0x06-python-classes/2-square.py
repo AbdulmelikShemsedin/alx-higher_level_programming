@@ -6,10 +6,8 @@ class Square:
         """ instantation with size for our obect
         initialization
         """
-        self.__size = size
         if size != int(size):
-            print("size must be an integer", end="")
-            raise TypeError
+            raise TypeError("size must be an integer", end="")
         if size < 0:
-            print("size must be >= 0", end="")
-            raise ValueError
+            raise ValueError("size must be >= 0", end="")
+        self.__size = size

@@ -2,17 +2,17 @@
 """ Define a square class"""
 class Square:
     """ rep.. of a square class"""
+
     def __init__(self, size=0):
         """ instantation with size for our obect
         initialization
         """
-        self.__size = size
         if size != int(size):
-            print("size must be an integer", end="")
-            raise TypeError
+            raise TypeError("size must be an integer", end="")
         if size < 0:
-            print("size must be >= 0", end="")
-            raise ValueError
+            raise ValueError("size must be >= 0", end="")
+        self.__size = size
+
     def area(self):
         """ method returns the current square area"""
         return self.__size ** 2
