@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" the rectanle class module"""
+""" the rectangle class module"""
 
 
 class Rectangle:
-    """ the rectanle class"""
+    """ the rectangle class"""
     def __init__(self, width=0, height=0):
         """ instantation of the class"""
         self.__width = width
@@ -18,11 +18,9 @@ class Rectangle:
     def width(self, value):
         """ the setter for the width"""
         if type(value) is not int:
-            print("width must be an integer")
-            raise TypeError
+            raise TypeError("width must be an integer")
         elif value < 0:
-            print("width must be >= 0")
-            raise ValueError
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -34,9 +32,7 @@ class Rectangle:
     def height(self, value):
         """ the setter for the height"""
         if type(value) is not int:
-            print("height must be an integer")
-            raise TypeError
+            raise TypeError("height must be an integer")
         elif value < 0:
-            print("height must be >= 0")
-            raise ValueError
+            raise ValueError("width must be >= 0")
         self.__height = value
